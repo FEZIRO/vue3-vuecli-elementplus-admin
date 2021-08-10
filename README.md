@@ -2,7 +2,7 @@
 
 ## vue3-vuecli-elementplus-admin管理系统快速开发模板
 <br>
-​ 基于Vue3.0 和 ElementPlus框架，使用vue-cli4进行构建。<br>此模板可用于现代化管理系统的初始开发模板，可节省一些重复性的工程初始化搭建工作。
+​ 基于Vue3.0 和 ElementPlus框架，使用vue-cli4进行构建，界面与模板结构与vite版一致[vue3-vite-elementplus-admin](https://github.com/FEZIRO/vue3-vite-elementplus-admin)，只是构建工具不同。此模板可用于现代化管理系统的初始开发模板，可节省一些重复性的工程初始化搭建工作。
 <br>
 <br>
 
@@ -16,6 +16,7 @@
 - 使用`VueRouter`动态生成不同角色菜单的路由权限。
 - 基本的兼容性提醒，由于vue3不兼容IE浏览器，因此如检测为IE浏览器则提醒用户切换使用其他浏览器。
 - 界面设计简约，可根据自己的实际开发情况增加删除工具库或修改源码。
+  <br>
   <br>
 
 ## 使用库/工具
@@ -35,6 +36,17 @@
 - webpack-bundle-analyzer （webpack打包文件大小占比分析插件）
 - ProgressBarPlugin （进度条插件，可用于查看打包进度）
 - compression-webpack-plugin (gzip打包压缩插件)
-  <br><br>
+  <br>
+  <br>
+## 模板结构和关键点描述
+  与vite版的结构一致，请移步到vite版仓库查看
+  （[vue3-vite-elementplus-admin](https://github.com/FEZIRO/vue3-vite-elementplus-admin)）
+<br>
+<br>
+## 注意
 
-
+- Vue 3 不兼容IE浏览器。
+- 本模板的ElementPlus使用的是1.0.2-beta.55测试版，由于是测试版缘故，功能设置随时会变，故当更新到某个新版本时某些设置可能会不正确不生效，一切以Element官方文档为准！
+<br>
+<br>
+<p align=center>By FEZIRO </p>
