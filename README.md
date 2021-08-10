@@ -2,22 +2,16 @@
 
 ## vue3-vuecli-elementplus-admin管理系统快速开发模板
 <br>
-​ 基于Vue3.0 和 ElementPlus框架，使用vue-cli4进行构建，界面与模板结构与vite版一致[vue3-vite-elementplus-admin](https://github.com/FEZIRO/vue3-vite-elementplus-admin)，只是构建工具不同。此模板可用于现代化管理系统的初始开发模板，可节省一些重复性的工程初始化搭建工作。
+​ 基于Vue3.0 和 ElementPlus框架，使用vue-cli4进行构建，界面与模板结构与vite版一致，只是构建工具不同。此模板可用于现代化管理系统的初始开发模板，可节省一些重复性的工程初始化搭建工作。
+
 <br>
 <br>
 
-## 特性
-
-- 包含简易的登录注册页、首页、404 提示页、用户管理页、角色权限页。
-- 封装好的经典管理端布局（包含头部组件、侧边栏菜单组件、面包屑组件、标签切换器组件）。
-- 默认使用`axios`请求数据和`mockjs`来模拟数据。
-- 封装的公共组件：倒计时按钮组件。
-- 使用`nprogress`插件来作为单页面切换的加载指示器。
-- 使用`VueRouter`动态生成不同角色菜单的路由权限。
-- 基本的兼容性提醒，由于vue3不兼容IE浏览器，因此如检测为IE浏览器则提醒用户切换使用其他浏览器。
-- 界面设计简约，可根据自己的实际开发情况增加删除工具库或修改源码。
-  <br>
-  <br>
+## 特性/模板结构/关键点描述
+  此部分与vite版一致，请移步到vite版仓库查看
+  （[vue3-vite-elementplus-admin](https://github.com/FEZIRO/vue3-vite-elementplus-admin)）
+<br>
+<br>
 
 ## 使用库/工具
 
@@ -38,11 +32,7 @@
 - compression-webpack-plugin (gzip打包压缩插件)
   <br>
   <br>
-## 模板结构和关键点描述
-  与vite版的结构一致，请移步到vite版仓库查看
-  （[vue3-vite-elementplus-admin](https://github.com/FEZIRO/vue3-vite-elementplus-admin)）
-<br>
-<br>
+
 ## 注意
 
 - Vue 3 不兼容IE浏览器。
