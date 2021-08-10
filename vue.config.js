@@ -2,14 +2,13 @@ const ProgressBarPlugin = require("progress-bar-webpack-plugin");
 const chalk = require("chalk");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
+const CompressionWebpackPlugin = require("compression-webpack-plugin");
 
 module.exports = {
   publicPath: "./",
 
-  // 放置生成的静态资源(css、img、fonts)的(相对于 outputDir 的)目录(默认'')
   assetsDir: "public",
 
-  // 指定生成的 index.html 的输出路径(相对于 outputDir)也可以是一个绝对路径。
   indexPath: "index.html",
 
   devServer: {
@@ -28,9 +27,19 @@ module.exports = {
 
   configureWebpack: config => {
     if (process.env.NODE_ENV === "production") {
+      //正式打包去除console语句
       config.optimization.minimizer[0].options.terserOptions.compress.drop_console = true;
       //可视化分析打包文件占比
       config.plugins.push(new BundleAnalyzerPlugin());
+      //开启gzip压缩
+      config.plugins.push(
+        new CompressionWebpackPlugin({
+          algorithm: "gzip",
+          test: /\.js$|\.html$|\.json$|\.css/,
+          threshold: 10240,
+          minRatio: 0.8,
+        })
+      );
     }
     //打包进度条
     config.plugins.push(
